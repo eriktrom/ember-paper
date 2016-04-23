@@ -13,9 +13,13 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.import(app.bowerDirectory + '/hammerjs/hammer.js');
-    app.import(app.bowerDirectory + '/matchMedia/matchMedia.js');
-    app.import('vendor/propagating.js');
+    if (!!process.env.IS_FASTBOOT) {
+
+    } else {
+      app.import(app.bowerDirectory + '/hammerjs/hammer.js');
+      app.import(app.bowerDirectory + '/matchMedia/matchMedia.js');
+      app.import('vendor/propagating.js');
+    }
   },
 
   treeForStyles: function(tree) {
