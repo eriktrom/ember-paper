@@ -1,6 +1,5 @@
 import isBrowser from '../utils/is-browser';
 import Ember from 'ember';
-import HasBlockMixin from '../mixins/hasblock-mixin';
 import { promiseArray } from 'ember-paper/utils/promise-proxies';
 
 function isString(item) {
@@ -21,7 +20,7 @@ function isString(item) {
  * - paper-button
  * - input
  */
-export default Ember.Component.extend(HasBlockMixin, {
+export default Ember.Component.extend({
   util: Ember.inject.service(),
   constants: Ember.inject.service(),
 
