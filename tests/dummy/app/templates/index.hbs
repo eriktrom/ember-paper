@@ -45,6 +45,11 @@
   <p>You can find out more information on the CSP addon page <a href="https://github.com/rwjblue/ember-cli-content-security-policy#ember-cli-content-security-policy">here</a>.</p>
   <p>We also need to allow `data:` in `img-src` because of a <a href="https://github.com/miguelcobain/ember-paper/blob/master/app%2Fstyles%2Fpaper-button.scss">current hack</a> in paper-button.</p>
 
+  <p>
+    Finally, the examples contain a `transition-to` helper that is not installed by default. To use this helper run the following:
+    {{#code-block language='bash'}}$ npm i -D ember-route-action{{/code-block}}
+  </p>
+
   <h2 class="md-headline">Contribution</h2>
   <p>This is a very ambitious project. Google's design specs are extensive, and not trivial to implement. <strong>ember-paper</strong> is heavily based on <a href="https://github.com/angular/material">Angular Material</a> and <a href="https://github.com/google/web-starter-kit/tree/material-sprint">Web Starter Kit (material-sprint branch)</a>. These seem to be the most useful resources at the moment. If you feel like porting or fixing an element or two, please drop a pull request or issue at GitHub!</p>
   <p>I believe that with the help of everyone we can bring these amazing design spec to Ember in a modular and robust way. The Ember way. </p>
