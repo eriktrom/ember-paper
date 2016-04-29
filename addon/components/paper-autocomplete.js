@@ -1,3 +1,4 @@
+import isBrowser from '../utils/is-browser';
 import Ember from 'ember';
 import HasBlockMixin from '../mixins/hasblock-mixin';
 import { promiseArray } from 'ember-paper/utils/promise-proxies';
@@ -54,6 +55,10 @@ export default Ember.Component.extend(HasBlockMixin, {
 
   init() {
     this._super(...arguments);
+
+    if (!isBrowser()) {
+      return;
+    }
 
     if (this.get('model')) {
       this.set('searchText', this.lookupLabelOfItem(this.get('model')));

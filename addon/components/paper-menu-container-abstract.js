@@ -24,6 +24,7 @@ export default Ember.Component.extend({
     };
   }),
 
+  // TODO: don't use the .on version of hooks unless good reason
   moveComponentToBody: Ember.on('didInsertElement', function() {
     let _self = this;
     let dom = this.$().detach();
