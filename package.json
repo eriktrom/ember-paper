@@ -46,20 +46,20 @@
     "ember-load-initializers": "^0.5.1",
     "ember-prism": "0.0.5",
     "ember-resolver": "^2.0.3",
+    "ember-route-action": "0.0.5",
     "ember-suave": "2.0.1",
     "ember-try": "^0.2.2",
     "loader.js": "^4.0.1"
   },
   "dependencies": {
+    "angular-material-source": "angular/material#v1.0.6",
     "broccoli-autoprefixer": "^3.0.0",
     "broccoli-filter": "^1.2.3",
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.0",
     "ember-cli-babel": "^5.1.6",
     "ember-css-transitions": "^0.1.0",
-    "ember-wormhole": "^0.3.4",
-    "angular-material-source": "angular/material#v1.0.6",
-    "ember-route-action": "0.0.5"
+    "ember-wormhole": "^0.3.4"
   },
   "keywords": [
     "ember-addon",
