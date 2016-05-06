@@ -1,7 +1,7 @@
 {
   "name": "ember-paper",
   "description": "The Ember approach to Material Design.",
-  "version": "0.2.12",
+  "version": "1.0.0-alpha.0",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -52,14 +52,14 @@
     "loader.js": "^4.0.1"
   },
   "dependencies": {
-    "angular-material-source": "angular/material#v1.0.6",
     "broccoli-autoprefixer": "^3.0.0",
     "broccoli-filter": "^1.2.3",
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.0",
     "ember-cli-babel": "^5.1.6",
     "ember-css-transitions": "^0.1.0",
-    "ember-wormhole": "^0.3.4"
+    "ember-wormhole": "^0.3.4",
+    "angular-material-source": "angular/material#v1.0.6"
   },
   "keywords": [
     "ember-addon",
